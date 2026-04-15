@@ -1,0 +1,15 @@
+{
+  "name": "ping-pong-native-webgl",
+  "version": "1.0.0",
+  "description": "Simple game ping pong on native webgl",
+  "main": "Main.js",
+  "scripts": {
+    "start": "http-server . -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tessecrack",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
