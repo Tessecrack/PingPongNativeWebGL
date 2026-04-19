@@ -1,14 +1,21 @@
 class GLObject {
     constructor(program,
         attribPositionLocation,
-        uniformMatrixLocation,
+        uniformResolutionLocation,
+        uniformTranslationLocation,
         uniformColorLocation,
-        geometry
+        buffer,
+        geometry,
+        color
     ) {
         this.program = program
         this.attribPositionLocation = attribPositionLocation
+        this.uniformResolutionLocation = uniformResolutionLocation
+        this.uniformTranslationLocation = uniformTranslationLocation
         this.uniformColorLocation = uniformColorLocation
+        this.buffer = buffer
         this.geometry = geometry
+        this.color = color
     }
 }
 
