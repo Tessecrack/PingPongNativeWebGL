@@ -7,7 +7,6 @@ class GLObject {
     ) {
         this.program = program
         this.attribPositionLocation = attribPositionLocation
-        this.uniformMatrixLocation = uniformMatrixLocation
         this.uniformColorLocation = uniformColorLocation
         this.geometry = geometry
     }
