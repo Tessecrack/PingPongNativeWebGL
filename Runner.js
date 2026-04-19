@@ -53,7 +53,7 @@ class Runner {
 
 
         const rectArrayPoints = this.getRectPoints(xPlatform, yPlatform, widthPlatform, heightPlatform)
-        const platformGeometry = new Geometry(0, 0, 100, 100, 6, rectArrayPoints)
+        const platformGeometry = new Geometry(0, 0, widthPlatform, heightPlatform, 6, rectArrayPoints)
         const platformColor = [1.0, 0.0, 1.0, 1.0]
 
         const platformBuffer = this.gl.createBuffer()
@@ -104,7 +104,8 @@ class Runner {
     }
 
     updatePlatformPosition(deltaTime) {
-        const vx = (this.mousePosition.x - this.platform.geometry.x) / 100
+        const platformCenter = this.platform.geometry.x + this.platform.geometry.width / 2
+        const vx = (this.mousePosition.x - platformCenter) / 70
         this.platform.geometry.x += vx * deltaTime
     }
 
